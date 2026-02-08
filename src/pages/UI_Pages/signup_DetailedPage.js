@@ -1,7 +1,6 @@
 export class Signup_Details_Page {
   constructor(page) {
     this.page = page;
-
     this.password = page.locator("#password");
     this.day = page.locator("#days");
     this.month = page.locator("#months");
