@@ -12,11 +12,10 @@ export class New_User_Signup {
   }
   async enterEmail(email) {
     await this.email.fill(email);
-     //await this.page.waitForLocator(this.submit)
+     
   }
   async signUpButton() {
    
-    // Click + wait for URL change
     await Promise.all([
         this.page.waitForURL("**/signup"), 
         this.submit.click()

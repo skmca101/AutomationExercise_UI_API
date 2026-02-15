@@ -1,0 +1,24 @@
+{
+    "basicSignupDetails":
+    {
+       "Name" : "Santosh Kumar",
+       "Email" : "cypresslover@gmail.com"
+    },
+    "completeDetails":
+    {
+        "password": "pwd@123",
+        "dob_Day" : "4",
+        "dob_Month" : "7",
+        "dob_Year" : "1985",
+        "First_Name": "Santosh",
+        "last_Name" : "Kumar",
+        "company": "dummyCompany",
+        "address": "bareilly uttar pradesh",
+        "country": "India",
+        "state" : "Uttar Pradesh",
+        "city":"Bareilly",
+        "zipCode" : "243001",
+        "mobile": "8279840723"
+        }
+   
+}
