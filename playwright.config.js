@@ -20,6 +20,7 @@ dotenv.config({ path: path.resolve(process.cwd(),`src/env/${ENV}.env`) });
  */
 export default defineConfig({
   testDir: './tests',
+  globalSetup: './src/utils/auth.utils.js',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -33,10 +34,11 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
+    storageState: "session.json",
     baseURL: process.env.BASEURL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */

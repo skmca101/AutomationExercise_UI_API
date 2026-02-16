@@ -4,7 +4,7 @@ import { Signup_Details_Page } from "../../src/pages/UI_Pages/signup_DetailedPag
 import { closedAidIfPresent } from "../../src/utils/handleAid";
 import { waitForPageLoad } from "../../src/utils/wait.utils";
 import {assertions} from "../../src/pages/UI_Pages/assertions"
-import {testData} from "../../src/testData/users.json"
+//import testData from "../../src/testData/users.json"
 
 
 // Object creation of class
@@ -32,10 +32,10 @@ test.describe("Complete User Creation Setup", () => {
     })
 
     await test.step("Enter Name", async () => {
-      await BasicSignupDetails.enterInputName(testData.BasicSignupDetails.Name);
+      await BasicSignupDetails.enterInputName("Santosh Kumar");
     });
     await test.step("Enter Email", async () => {
-      await BasicSignupDetails.enterEmail(testData.BasicSignupDetails.Email);
+      await BasicSignupDetails.enterEmail("test@gmail.com");
     });
     await test.step("Click on Sign Up button", async () => {
       await BasicSignupDetails.signUpButton();
